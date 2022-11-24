@@ -1,0 +1,20 @@
+.Footer{
+    margin-top: 1rem;
+  padding: 1.5rem;
+  display: flex;
+  justify-content:space-evenly;
+  background-image: linear-gradient(to left, rgba(247, 247, 247, 0), #b4d3e6, #408ebbf8, #2587be, #18577cd7);
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+.footer-info{
+  color: white;
+}
+.footer-adresa{
+  color: white;
+}
+.footer-social-media{
+  color: rgba(3, 3, 3, 0.842);
+}
