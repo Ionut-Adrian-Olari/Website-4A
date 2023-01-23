@@ -7,7 +7,7 @@ import Start from './Components/User/Guest/Pages/Start';
 import Prezentare from './Components/User/Guest/Pages/Prezentare';
 import DetaliiClub from './Components/User/Guest/Pages/DetaliiClub';
 import CalendarMeciuri from './Components/User/Guest/Pages/CalendarMeciuri';
-import Nautati from './Components/User/Guest/Pages/Nautati';
+import Noutati from './Components/User/Guest/Pages/Noutati';
 import Personal from './Components/User/Guest/PersonalPages/Personal';
 import VoleiJuvenil from './Components/User/Guest/Pages/VoleiJuvenil';
 import Sponsori from './Sponsori';
@@ -24,7 +24,7 @@ function App() {
       <Route path='/Prezentare'  exact element={<Prezentare/>}/>
       <Route path='/DetaliiClub' element={<DetaliiClub/>}/>
       <Route path='/CalendarMeciuri' element={<CalendarMeciuri/>}/>
-      <Route path='/Nautati' element={<Nautati/>}/>
+      <Route path='/Noutati' element={<Noutati/>}/>
       <Route path='/Personal'element={<Personal/>}/>
       <Route path='/VoleiJuvenil' element={<VoleiJuvenil/>}/>
       </Routes>

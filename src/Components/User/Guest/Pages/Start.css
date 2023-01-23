@@ -3,22 +3,12 @@
     height: 100vh;
 
 }
-.btn-admin{
-    position: absolute;
-    top: 40%;
-    left: 20%;
-    
+.BtnGrup{
+    display: flex;
+    padding-top: 10%;
+    padding-left: 25%;
+    size: 200px;
 }
-.btn-content-creator{
-    position: absolute;
-    top: 50%;
-    left: 20%;
-    font-size: 20px;
-    
-}
-.btn-vizualizare{
-    position: absolute;
-    top: 60%;
-    left: 20%;
-    
+.btnAdmin{
+    text: '22px'
 }

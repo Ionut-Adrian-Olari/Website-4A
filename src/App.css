@@ -12,7 +12,7 @@
 .Prezentare,
 .DetaliiClub,
 .CalendarMeciuri,
-.Nautati,
+.Noutati,
 .Personal,
 .VoleiJuvenil {
   display: flex;
@@ -27,7 +27,8 @@
   display: flex;
   justify-content:space-evenly;
   position: fixed;
- bottom: 0;
+  bottom: 0;
   left: 0;
   width: 100%;
+  
 }

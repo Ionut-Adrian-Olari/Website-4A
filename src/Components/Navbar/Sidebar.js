@@ -23,8 +23,8 @@ export const Sidebar=[
     },
 
     {
-        title: 'Nautati',
-        path: '/Nautati.js',
+        title: 'Noutati',
+        path: '/Noutati',
         clName: 'nav-text',
     },
 

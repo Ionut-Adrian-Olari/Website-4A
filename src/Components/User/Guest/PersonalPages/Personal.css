@@ -1,0 +1,37 @@
+.grup1{
+    display: grid;
+    grid-template-columns: repeat(3, 300px);
+    grid-template-rows: repeat(5,200px);
+    grid-gap: 70px;
+    padding-top: 100px;
+    justify-content: space-around;
+    text-align: center;
+    
+}
+.Antrenori{
+    display: grid;
+    grid-template-columns: repeat(2, 300px);
+    grid-gap: 70px;
+    padding-top: 100px;
+    justify-content: space-around;
+    text-align: center;
+    padding-bottom: 500px;
+    
+}
+.titlu{
+    text-align: center;
+
+}
+.divizie{
+    justify-content: center;
+}
+.teofani{
+    width: 200px;
+    height: 200px;
+}
+.teofan{
+    font-size: large;
+}
+.zonaAntrenor{
+    padding-top: 100px;
+}

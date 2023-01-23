@@ -1,0 +1,26 @@
+.Jucator{
+    display: flex;
+    justify-content:center;
+    padding-top: 6rem;
+    
+}
+.infoJucator{
+    padding-left: 2rem;
+}
+.infoGeneral{
+    padding-top: 5rem;
+    display: grid;
+    grid-template-columns: repeat(2, 10rem);
+    grid-template-rows: repeat(5, 1.5rem);
+}
+
+.infoIstoric{
+    padding-top: 2rem;
+    padding-left: 5rem;
+}
+.Istoric{
+    padding-top: 3rem;
+    display: grid;
+    grid-template-columns: repeat(3, 10rem);
+    grid-template-rows: repeat(3, 1.5rem);
+}
