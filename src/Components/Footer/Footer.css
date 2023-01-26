@@ -1,14 +1,18 @@
 .Footer{
-    margin-top: 5rem;
-  padding: 1.5rem;
+  padding: 1rem;
   display: flex;
   justify-content:space-evenly;
-  background-image: linear-gradient(to left, rgba(247, 247, 247, 0), #b4d3e6, #408ebbf8, #2587be, #18577cd7);
-  position: fixed;
+  /*background-image: linear-gradient(to left, rgba(247, 247, 247, 0), #b4d3e6, #408ebbf8, #2587be, #18577cd7);*/
+  background-color:rgb(2, 35, 78);
+  position:fixed;
   bottom: 0;
   left: 0;
   width: 100%;
-  opacity: 70%;
+
+}
+a:-webkit-any-link {
+  color: rgb(255, 255, 255);
+  cursor: pointer;
 }
 .footer-info{
   color: white;
@@ -17,5 +21,5 @@
   color: white;
 }
 .footer-social-media{
-  color: rgba(3, 3, 3, 0.842);
+  color: rgba(255, 255, 255, 0.842);
 }

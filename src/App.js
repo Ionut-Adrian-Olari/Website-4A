@@ -16,9 +16,9 @@ function App() {
   return (
     <>
     <Router>
-      <Sponsori/>
+    <Navbar />
       <Footer/>
-      <Navbar />
+      <Sponsori/>
       <Routes>
       <Route path='/' exact element={<Start/>}/>
       <Route path='/Prezentare'  exact element={<Prezentare/>}/>
@@ -28,6 +28,7 @@ function App() {
       <Route path='/Personal'element={<Personal/>}/>
       <Route path='/VoleiJuvenil' element={<VoleiJuvenil/>}/>
       </Routes>
+      
     </Router>
     
     </>

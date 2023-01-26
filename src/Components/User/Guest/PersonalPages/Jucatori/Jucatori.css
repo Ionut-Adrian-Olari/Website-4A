@@ -13,7 +13,10 @@
     grid-template-columns: repeat(2, 10rem);
     grid-template-rows: repeat(5, 1.5rem);
 }
-
+.teofanii{
+    width: 500px;
+    height: 500px;
+}
 .infoIstoric{
     padding-top: 2rem;
     padding-left: 5rem;

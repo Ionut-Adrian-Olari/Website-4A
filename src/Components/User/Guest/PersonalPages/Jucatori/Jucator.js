@@ -1,7 +1,9 @@
-import React from 'react'
+import React, { useState } from 'react'
 import "./Jucatori.css";
 import teofan1 from '../../Assets/teofan.png';
+import { jucatorData } from './JucatorData';
 function Jucator(){
+   const [jucator, setJucator]= useState(jucatorData);
 
 
     return(

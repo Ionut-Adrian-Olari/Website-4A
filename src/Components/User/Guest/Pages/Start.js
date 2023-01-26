@@ -1,5 +1,6 @@
 import React, {useState} from 'react'
 import "./Start.css";
+import SignUp from "./Inregistrare";
 import { Link } from 'react-router-dom';
 import Stack from '@mui/material/Stack';
 import Button from '@mui/material/Button';
@@ -9,6 +10,9 @@ import DialogContent from '@mui/material/DialogContent';
 import DialogContentText from '@mui/material/DialogContentText';
 import DialogTitle from '@mui/material/DialogTitle';
 import image from '../Assets/vball5.jpg'
+import SignIn from './Logare';
+
+
 
 function Start() {
   const [open, setOpen] = useState(false);
@@ -32,34 +36,27 @@ function Start() {
   return (
   <>
     <div className='start-container' style={{ backgroundImage:`url(${image})` }}>
-      
-    <div className='BtnGrup'>
-    <Stack spacing={4}>
-      <Button style={style} className='btnAdmin' size='large' variant="outlined" onClick={handleClickOpen}>Administrator</Button>
-      <Dialog
+    <Dialog
         open={open}
         onClose={handleClose}
-        aria-labelledby="alert-dialog-title"
-        aria-describedby="alert-dialog-description"
+        aria-labelledby="responsive-dialog-title"
       >
-        <DialogTitle id="alert-dialog-title">
-          {"Login"}
-        </DialogTitle>
         <DialogContent>
-        <div className='loginform'>
-            <label className='User'>User</label>
-            <input type='text'></input>
-            <label className='User'>User</label>
-            <label className='User'>User</label>
-            </div>
+          <SignIn/>
+          <SignUp/>
         </DialogContent>
         <DialogActions>
-          <Button onClick={handleClose}>Disagree</Button>
+          <Button autoFocus onClick={handleClose}>
+            Disagree
+          </Button>
           <Button onClick={handleClose} autoFocus>
             Agree
           </Button>
         </DialogActions>
       </Dialog>
+    <div className='BtnGrup'>
+    <Stack spacing={4}>
+      <Button style={style} className='btnAdmin' size='large' variant="contained" onClick={handleClickOpen}>Administrator</Button>
       <Button style={style}  className='btnCreator' size='large' variant="contained" onClick={handleClickOpen}>Creator</Button>
       <Button  style={style} className='btnVizitator' size='large' variant="contained" onClick={handleClickOpen}>Vizitator</Button>
     </Stack>

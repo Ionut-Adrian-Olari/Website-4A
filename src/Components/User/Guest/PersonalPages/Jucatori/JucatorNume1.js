@@ -1,7 +1,7 @@
 import React from 'react'
 import "./Jucatori.css";
 import teofan from '../../Assets/teofan.png';
-function Jucator(){
+function JucatorNume1(){
 
 
     return(
@@ -41,4 +41,4 @@ function Jucator(){
     )
 }
 
-export default Jucator;
+export default JucatorNume1;

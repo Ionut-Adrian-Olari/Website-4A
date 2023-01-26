@@ -1,10 +1,11 @@
 .header{
-    background-image: linear-gradient(to left, rgba(247, 247, 247, 0), #b4d3e6, #408ebbf8, #2587be, #18577cd7);
+   /* background-image: linear-gradient(to left, rgba(247, 247, 247, 0), #b4d3e6, #408ebbf8, #2587be, #18577cd7);*/
+   background-color: rgb(2, 35, 78);
     height: 80px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    opacity: 70%;
+   
 
 }
 .menu-name-logo{
@@ -28,7 +29,8 @@
 }
 
 .nav-menu{
-    background-image: linear-gradient(to top, rgba(247, 247, 247, 0), #b4d3e6, #408ebbf8, #2587be, #18577cd7);
+    /*background-image: linear-gradient(to top, rgba(247, 247, 247, 0), #b4d3e6, #408ebbf8, #2587be, #18577cd7);*/
+    background-color: rgb(2, 35, 78);
     width: 250px;
     height:100vh;
     display: flex;
