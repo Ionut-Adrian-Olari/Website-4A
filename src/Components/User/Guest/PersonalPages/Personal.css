@@ -8,16 +8,7 @@
     text-align: center;
     
 }
-.Antrenori{
-    display: grid;
-    grid-template-columns: repeat(2, 300px);
-    grid-gap: 70px;
-    padding-top: 100px;
-    justify-content: space-around;
-    text-align: center;
-    padding-bottom: 500px;
-    
-}
+
 .titlu{
     text-align: center;
 
@@ -25,13 +16,95 @@
 .divizie{
     justify-content: center;
 }
-.teofani{
+.personal{
+    background-color: rgb(2, 23, 80) !important;
+    display: flex;
+    justify-content: center;
+}
+.imgparticipant1p{
+    height: 58px;
+    width: 58px;
+}
+.lotcurrentp{
+    display: flex;
+
+
+    
+}
+.lotjucnumep{
+    display: flex;
+    justify-content: center;
+}
+.lotcurentcorpp{
+    /* display:grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(5,auto);
+     */
+     
+     display: flex;
+     flex-wrap: wrap;
+     overflow-x:auto;
+     justify-content: center;
+     align-content: center;
+     gap: 20px;
+     
+
+
+}
+.infoGeneralp1{
+     padding-top: 1rem;
+    display: grid;
+    grid-template-columns: repeat(2, 9rem);
+    grid-template-rows: repeat(5, 1.5rem); 
+    justify-content: center;
+
+}
+.lotcurentantrenorigrupp{
+    margin-top: 50px;
+    display: flex;
+     flex-wrap: wrap;
+     overflow-x:auto;
+     justify-content: center;
+     align-items: center;
+     align-content: center;
+     gap: 20px;
+}
+.lotjucp{
+    display: flex;
+}
+.lotcurentantrenorip{
+    
+}
+.lotcurentjucpaper{
+    display:flex;
+}
+.imglotjucp{
+    height:300px;
+    width: 300px;
+    /* border-radius: 20%; */
+}
+.imglogop{
+    
+    height:100px;
     width: 100px;
-    height: 100px;
+    border-radius: 8px;
 }
-.teofan{
-    font-size: large;
+.imglogocp{
+    background-color: rgb(2, 35, 78);
+    display: flex;
+    justify-content: end;
+    
 }
-.zonaAntrenor{
-    padding-top: 100px;
+.infoIstoric12{
+    
+    padding-left: 7rem; 
+}
+.Istoric12{
+
+    display: grid;
+    grid-template-columns: repeat(3, 10rem);
+    grid-template-rows: repeat(3, 1rem); 
+    justify-content: center;
+    
+    
 }

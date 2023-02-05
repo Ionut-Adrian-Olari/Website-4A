@@ -2,8 +2,16 @@
     display: flex;
     justify-content:center;
     padding-top: 6rem;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: fixed;
     
 }
+    
 .infoJucator{
     padding-left: 2rem;
 }
@@ -14,8 +22,8 @@
     grid-template-rows: repeat(5, 1.5rem);
 }
 .teofanii{
-    width: 500px;
-    height: 500px;
+    width: 400px;
+    height: 400px;
 }
 .infoIstoric{
     padding-top: 2rem;

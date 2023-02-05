@@ -8,10 +8,86 @@
 }
 
 
+.DetaliiClub{
+  background-color: #1b518f;
+  display: flex;
+  justify-content: center;
+  height: 90vh;
+ 
 
+}
+.titlullist{
+  text-align: center;
+}
+.contenttxt{
+  text-align: center;
+  
+}
+.CalendarMeciuri{
+  background-color: #9dc5f3;
+  display: relative;
+  height: auto;
+ 
+}
+.nav-barcalendar{
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+}
+.Calendar-meciurinav{
+  margin-left: 25rem;
+}
+
+.imgcalendar{
+  border-radius: 2%;
+}
+.nav-barcalendar{
+  display: flex;
+  margin-right: 31.1rem;
+  background-color: rgb(63, 137, 172);
+  
+}
+.grid-meci{
+  margin-left: 1rem;
+  border-bottom: 3px solid ;
+  border-color: #140555;
+  margin-right: 31.1rem;
+}
+.echipa1zona{
+  display: flex;
+}
+.imgpartzona{
+  height: 30px;
+  width: 30px;
+}
+
+.rezultat-meci, .loc-meci, .link-meci{
+  display: flex;
+ padding-top: 1rem;
+}
+.runda-meci{
+ border-bottom: 3px solid;
+ border-color:#140555;
+}
+.data-meci, .ora-meci{
+ margin-top: 1rem;
+}
+.liniemeci{
+  display: flex;
+  justify-content: start;
+  gap: 120px;
+}
+.Noutati{
+  background-color: #e4e4e4;
+  display: flex;
+  height: auto;
+  justify-content: center;
+};
+.noutati-container{
+  display: flex;
+  justify-content: center;
+};
 .Prezentare,
-.CalendarMeciuri,
-.Noutati,
 .Personal,
 .VoleiJuvenil {
   display: flex;
@@ -21,11 +97,12 @@
   font-size: 3rem;
 }
 .paper-container{
-  margin-top: 1rem;
- padding-bottom: 10rem;
+ padding-top: 1%;
+ padding-bottom: 1rem;
+ background-color:rgb(2, 35, 78);
   display: flex;
   justify-content:space-evenly;
-  position: fixed;
+  position: relative;
   bottom: 0;
   left: 0;
   width: 100%;

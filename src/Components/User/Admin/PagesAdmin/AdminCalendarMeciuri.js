@@ -2,19 +2,21 @@ import React from 'react';
 import Navbar from '../../../Navbar/Navbar';
 import Footer from '../../../Footer/Footer';
 import Sponsori from '../../../../Sponsori';
-function VoleiJuvenil(){
+import Jucator from '../PersonalPages/Jucatori/Jucator';
+
+function CalendarMeciuri(){
     return(
         <>
         <Navbar />
         
-        <div className='VoleiJuvenil'>
-           <h1>VoleiJuvenil</h1>
+        <div className='CalendarMeciuri'>
+            <h1>CalendarMeciuri</h1>
+            
         </div>
         <Sponsori/>
         <Footer/>
         </>
-        
     );
 }
 
-export default VoleiJuvenil;
+export default CalendarMeciuri;

@@ -1,5 +1,4 @@
 import * as React from 'react';
-import Avatar from '@mui/material/Avatar';
 import Button from '@mui/material/Button';
 import CssBaseline from '@mui/material/CssBaseline';
 import TextField from '@mui/material/TextField';
@@ -11,23 +10,11 @@ import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
-
-function Copyright(props) {
-  return (
-    <Typography variant="body2" color="text.secondary" align="center" {...props}>
-      {'Copyright © '}
-      <Link color="inherit" href="https://mui.com/">
-        Your Website
-      </Link>{' '}
-      {new Date().getFullYear()}
-      {'.'}
-    </Typography>
-  );
-}
-
+import axios from 'axios';
+import { useNavigate } from 'react-router-dom';
 const theme = createTheme();
 
-export default function SignIn() {
+ function Autentificare() {
   const handleSubmit = (event) => {
     event.preventDefault();
     const data = new FormData(event.currentTarget);
@@ -35,15 +22,60 @@ export default function SignIn() {
       email: data.get('email'),
       password: data.get('password'),
     });
-  };
 
+    const data2 = {
+       email: data.get('email').toString(),
+       password: data.get('password').toString(),
+      
+    }
+   
+    const dAutor = {
+        
+      id: 20,
+name: "string",
+firstName: "string",
+nationality: "string",
+position: "string",
+birthDate: "2023-01-26T11:59:44.978Z",
+height: 0,
+description: "string"
+  };
+  //   const result2 = axios.post("http://localhost:8080/security/login",data2).then((response) =>  {console.log(response)})
+  //   const token = localStorage.getItem("token");
+  //   axios.interceptors.response.use(response => {
+  //     return response;
+  //  }, error => {
+  //    if (error.response.status === 401) {
+  //     //place your reentry code
+  //    }
+  //    return error;
+  //  });
+   };
+  // const getresult = axios.get("http://localhost:8080/player/id/6").then((response) => {console.log(response);});
+
+
+    // const result2 = axios.post("http://localhost:8080/security/login",dAutor2).then((response) => { token = response.data.token; const result1=  axios.post("http://localhost:8080/player",dAutor,{ headers: {
+    //         'Authorization': `Bearer ${token}` 
+    //       }}).then((response) => {console.log(response);});});
+
+          //  const getresult = axios.get("http://localhost:8080/player/id/6").then((response) => {console.log(response);});
+
+
+  let navigateLog = useNavigate();
+          const handleLog = () => {
+              let path1 = `/PagesAdmin/Prezentare`;
+              
+                  navigateLog(path1);
+              
+          };
   return (
-    <ThemeProvider theme={theme}>
+    <>
+    
+        <ThemeProvider theme={theme}> 
       <Container component="main" maxWidth="xs">
         <CssBaseline />
         <Box
           sx={{
-            marginTop: 8,
             display: 'flex',
             flexDirection: 'column',
             alignItems: 'center',
@@ -51,9 +83,9 @@ export default function SignIn() {
         >
           
           <Typography component="h1" variant="h5">
-            Sign in
+            Autentificare
           </Typography>
-          <Box component="form" onSubmit={handleSubmit} noValidate sx={{ mt: 1 }}>
+          <Box  onSubmit={handleSubmit} noValidate sx={{ mt: 1 }}>
             <TextField
               margin="normal"
               required
@@ -83,24 +115,28 @@ export default function SignIn() {
               fullWidth
               variant="contained"
               sx={{ mt: 3, mb: 2 }}
+              onClick={handleLog}
             >
-              Sign In
+              Autentificare
             </Button>
             <Grid container component="main" maxWidth="xs" >
-              <Grid item xs>
-                <Link href="#" variant="body2">
-                  Forgot password?
+              <Grid item>
+              <Link href="#" variant="body2">
+                 <Button>Ai uitat parola?</Button>
                 </Link>
               </Grid>
               <Grid item>
-                <Link href="#" variant="body2">
-                  {"Don't have an account? Sign Up"}
+              <Link href="#" variant="body2">
+                  <Button> {"Nu ai cont? Inregistreaza-te"}</Button>
                 </Link>
               </Grid>
             </Grid>
           </Box>
         </Box>
-      </Container>
-    </ThemeProvider>
+      </Container> 
+     </ThemeProvider>
+    
+    </>
   );
 }
+export default Autentificare;

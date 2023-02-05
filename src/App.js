@@ -16,9 +16,6 @@ function App() {
   return (
     <>
     <Router>
-    <Navbar />
-      <Footer/>
-      <Sponsori/>
       <Routes>
       <Route path='/' exact element={<Start/>}/>
       <Route path='/Prezentare'  exact element={<Prezentare/>}/>

@@ -20,7 +20,7 @@ function Navbar() {
         <h1>Volei Suceava</h1>
         </div>
         <div lassName='menu-name-logo'>
-            <Link to='/Prezentare'>
+            <Link to='/'>
             <img src={logoCSM} alt={logoCSM} height={80} width={100}/>
             </Link>
         </div>

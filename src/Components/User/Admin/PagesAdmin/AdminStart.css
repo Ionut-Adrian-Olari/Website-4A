@@ -71,20 +71,16 @@
 }
 .lotcurrent{
     display: flex;
+   
 
 
     
-}
-.lotjucnume{
-    display: flex;
-    justify-content: center;
 }
 .lotcurentcorp{
     /* display:grid;
     grid-template-columns: repeat(3, auto);
     grid-template-rows: repeat(5,auto);
      */
-     
      display: flex;
      flex-wrap: wrap;
      overflow-x:auto;
@@ -96,19 +92,6 @@
 
 }
 
-.lotcurentantrenorigrup{
-    margin-top: 82px;
-    display: flex;
-     flex-wrap: wrap;
-     overflow-x:auto;
-     justify-content: center;
-     align-items: center;
-     align-content: center;
-     gap: 20px;
-}
-.lotcurentantrenori{
-    
-}
 .imglotjuc{
     height:150px;
     width: 150px;
